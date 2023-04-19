@@ -174,7 +174,7 @@ func guessTheOutput8WithDispatch() {
     print("step 4")
     print("step 5")
 }
-//guessTheOutput8WithDispatch()
+guessTheOutput8WithDispatch()
 // output :- 1 ,4 , 5
 
 
@@ -284,7 +284,7 @@ func guessTheOutput11WithDispatch() {
     print("step 8")
 }
 
-//guessTheOutput11WithDispatch()
+guessTheOutput11WithDispatch()
 
 /* cut for make logic
  DispatchQueue.main.async {
@@ -362,3 +362,4 @@ func guessTheOutput12WithDispatch() {
     print("step 7")
     print("step 8")
 }
+guessTheOutput12WithDispatch()

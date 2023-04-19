@@ -55,3 +55,9 @@ var a: Int? = nil
 var b = 10
 let result = a ?? b
 
+
+
+let val = "425"
+
+let arr = val.components(separatedBy: ".")
+    print(arr)

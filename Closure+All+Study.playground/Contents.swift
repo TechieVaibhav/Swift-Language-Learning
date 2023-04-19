@@ -1,6 +1,5 @@
 import UIKit
 
-var greeting = "Hello, playground"
 
 
 //#MARK Closures :-
@@ -204,7 +203,7 @@ nonEscapingClosure {
 
 //Escaping Closure : if your closure is called later the function return, that is called escaping closure.
 // here compiler allocate a memory for escaping closure.
-
+/*
 func escapingClosure( work: @escaping ()->String) ->String{
     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1 ) {
         let resultValue = work()
@@ -219,3 +218,91 @@ let resultValue = escapingClosure {
 }
 
 print(resultValue)
+*/
+/*
+// Captured Behaviour
+var language = "objective-c"
+
+let code = { [language] in
+    print("the language : \(language)")
+}
+
+code() // the language : objective-c
+
+language = "swift"
+
+code() // the language : objective-c
+
+let newCode = code
+language = "swift12"
+
+newCode() //the language : objective-c
+*/
+
+
+// simple closure without capturing values
+
+/*
+ 
+var language = "objective-c"
+
+let CodeWithoutCapture = {
+    print("the language : \(language)")
+}
+
+CodeWithoutCapture() // the language : objective-c
+
+language = "swift"
+
+CodeWithoutCapture() // the language : swift
+
+let newCode2 = CodeWithoutCapture
+language = "swift12"
+
+newCode2() //the language : swift12
+
+CodeWithoutCapture()//the language : swift12
+
+ */
+
+
+
+
+/*
+class Increment{
+    var num = 0
+    
+    deinit{
+        print(#function)
+    }
+ 
+    lazy var increment:(Int)-> () = { value in
+        self.num += value
+        print("num is \(self.num)")
+    }
+}
+
+do {
+let increment = Increment()
+increment.increment(3)
+print(increment)
+}
+*/
+
+var arr = [2,1,8,9]
+var target = 10
+
+var leftPointer = arr[0]
+var total = arr.count - 1
+var rightPointer = arr[total]
+
+while rightPointer < leftPointer{
+    if leftPointer + rightPointer > target {
+        total = total - 1
+        rightPointer = arr[total]
+    } else if leftPointer + rightPointer == target{
+        print("letft \(leftPointer) \(rightPointer)")
+    }
+}
+
+

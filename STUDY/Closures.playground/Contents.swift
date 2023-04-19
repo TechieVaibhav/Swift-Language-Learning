@@ -148,6 +148,7 @@ asyncTestFunctionWithEscapingClosure {
 }
    */
 
+/*
 //Closure as a completion handler : to notify/callbacks your taks is done , now you can perform another one.
 func doSomeWork(completion:()->()) {
     print("function called")
@@ -174,3 +175,62 @@ func codeinPlayground(completion:(String)->()) {
 codeinPlayground { (msg) in
     print(msg)
 }
+
+
+*/
+/******************************* Capture values **************/
+var count = 0
+
+var incCounter = {
+    count += 1
+    print(count)
+}
+
+incCounter() // 1
+incCounter() // 2
+
+var constCount = 0
+
+var constantIncCounter = { [constCount]
+    constCount += 1
+    print(constCount)
+}
+constantIncCounter() // 1
+
+
+constCount = 2
+
+constantIncCounter() // 3
+
+
+var anotherConstCount = "0"
+
+let anotherConstantIncCounter = { [anotherConstCount] in
+    print("the language : \(anotherConstCount)")
+}
+anotherConstantIncCounter() // 0
+
+
+anotherConstCount = "10"
+
+anotherConstantIncCounter() // 10
+
+
+
+var language = "objective-c"
+
+let code = { [language]
+    print("the language : \(language)")
+}
+
+code() // the language : objective-c
+
+language = "swift"
+
+code() // the language : swift
+
+let newCode = code
+language = "swift12"
+
+newCode() //the language : objective-c
+

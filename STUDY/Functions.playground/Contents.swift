@@ -1,39 +1,5 @@
 import UIKit
 
-/*
-First Number :
- 
-Mistakes in 2019
-
-1. In Ipay :-
-a. Missing Flat Per Case.
-b. Bugs In Edditble Fields (P2P).
-c. First and Last Character First Letter Combine.
-d. Wrong Time Calculation.
-e. Under Pressure.
- 
-2. Fntasy: Scrolling issue not solved yet.
- 
-Common Mistakes as Usual:
-1.Time Wasting.
-2. No Seatting Timly.
-3. Watching unnessary movies/song.
- 
- //List Of Goals.
- Need To Do.
- 1. Time Management.
- 2. Deep Focus.
- 3. Fear Less.
- 4. Fit personalty.
- 5. Best Output with all inputs and outputs.
- 6. write all posible cases first before picking task.
- 7. Strong
- 8. Self-Respect.
- 9. Purchase a House.
- 10. Money.
-11. Communicationm Skills.
- 
-*/
 //Functions
 
 /*

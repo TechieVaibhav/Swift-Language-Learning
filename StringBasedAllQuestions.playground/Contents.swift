@@ -18,18 +18,23 @@ var greeting = "Hello, playground"
 
 let givenString = "ABCDFE"
 
-//func reverseTheStringByReverseLoop(givenStr : String) {
-//    let charArray : [Character] = Array(givenStr)
-//    print(charArray.count)
-//    for ch in charArray[(charArray.count - 1)...] {
-//        print(ch)
-//    }
-//
-//}
-//
-//reverseTheStringByReverseLoop(givenStr: givenString)
+func reverseTheStringByReverseLoop(givenStr : String) {
+    var result = ""
+    
+    for char in givenStr{
+        result = String(char) + result
+    }
+    print("\(result)")
+}
+
+reverseTheStringByReverseLoop(givenStr: givenString)
 
 
 
 /****************************************/
+
+
+
+
+
 

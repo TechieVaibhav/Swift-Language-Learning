@@ -100,4 +100,47 @@ print("outArray : \(outArray2)")//[1, 2, 3, 4, 5, 56]
 
 var inputArray2 : [String?] = ["12",nil, "2", nil]
 let outArray3 = inputArray2.compactMap({$0})
-print("outArray : \(outArray3)")//[1, 2, 3, 4, 5, 56]
+print("outArray : \(outArray3)")//[12, 2]
+
+
+// wrte a custom High order function
+
+extension Sequence{
+    func myForEach(complition : (Element)-> Void) {
+        for e in self{
+            complition(e)
+        }
+    }
+    
+    func myCustomMap<Transform>(transaform : (Element) -> Transform) -> [Transform] {
+        var arr = [Transform]()
+        forEach { element in
+            arr.append(transaform(element))
+        }
+        return arr
+    }
+    
+    func myCustomCompactMap<Transform>(transaform : (Element) -> Transform?) -> [Transform] {
+        var arr = [Transform]()
+        forEach { element in
+            if let unwrapedValue = transaform(element){
+                arr.append(unwrapedValue)
+            }
+        }
+        return arr
+    }
+}
+
+[1,2,3,4].myForEach { element in
+    print(element)
+}
+
+let res = ["1","2","3","4","w"].myCustomMap { element in
+    return Int(element)
+}
+print(res)
+
+let res2 = ["1","2","3","4", "abc"].myCustomCompactMap { element in
+    return Int(element)
+}
+print(res2)

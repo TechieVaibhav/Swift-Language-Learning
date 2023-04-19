@@ -8,6 +8,7 @@ let array2: Array<String> = Array<String>() // empty array of string
 
 var array3: [String] = [] // empty array of string
 array3.append("SS") //["SS"]
+
 let array4: [String] = [String]() // empty array of string
 
 let array5: [String] = Array(repeating: "Vaibhav", count: 41)
