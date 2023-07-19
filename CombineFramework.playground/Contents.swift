@@ -123,6 +123,28 @@ let dictPublisher  = ["first":1, "second" : 2].publisher.sink { value in
  dictPublisher value : (key: "second", value: 2)
  */
 
+
+let aset : Set<Int> = [1,2,3,4]
+    
+aset.publisher.sink { value in
+    print("set elements : \(value)")
+}
+
+
+let students: [String] = ["Ajay","Vijay","Suresh"]
+
+students.publisher.sink { acompletion in
+    switch acompletion{
+    case .finished :
+        print("finished")
+    case .failure(let error):
+        print("failuer : \(error)")
+    }
+} receiveValue: { value in
+    print(value)
+}
+
+
 // Subscriber completion enum offer us 2 enum cases .failure and .finished, .failure will call when something went wrong and .finished will be call if subscribtion is finished.
 
 
