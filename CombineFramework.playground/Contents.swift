@@ -153,11 +153,11 @@ students.publisher.sink { acompletion in
 
 
 // Publisher - publisher is a protocol, which have 2 important things - associated output, associated failure
-// Subscriber - subscriber is a protocol, which have 2 important things- associated input, associated output.
+// Subscriber - subscriber is a protocol, which have 2 important things- associated input, associated failure.
 
 // Connection - firstly we have to make a connection between Publisher & subscriber, Publisher has subscribe function, which helps to attach the subscriber to Publisher, we can attach the multiple subscriber to a single Publisher.
 
-// life Cycle - Subscriber will attach with Publisher by subscribe function (Publisher protocol function), then Pusblisher will send a subscription acknoweldgement to Subscriber, then subscriber will raise a demand ( request), this demand can be unlimited, in last Publisher will return a complition or error to sbscription.
+// life Cycle - Subscriber will attach with Publisher by subscribe function (Publisher protocol function), then Pusblisher will send a subscription acknoweldgement to Subscriber, then subscriber will raise a demand ( request), this demand can be unlimited, in last Publisher will return a complition or error to subscriber.
 
 func addTwoNum(a: Int, b: Int)-> Int{
     return a + b
@@ -181,4 +181,55 @@ justpubliser.print().subscribe(justSubscriber)
  receive finished
  finished
  */
+
+
+
+Just(5).map { value in
+    return value * 5
+}.sink { newValue in
+    print(newValue)
+}
+
+//25
+
+/*
+// Publisher
+
+let timerPublisher = Timer.publish(every: 2.0, on: .main, in: .default).autoconnect()
+
+//subscriber
+let subscriber = timerPublisher.sink { acompletion in
+    switch acompletion{
+    case .finished:
+        print("finished")
+    case .failure(let error):
+        print(error)
+    }
+} receiveValue: { value in
+    print(value)
+}
+*/
+
+
+//Operator with publisher.
+
+let dict = [1: "one", 2 : "two", 3 : "three", 5 : "five"]
+
+let number = (0...5)
+
+number.publisher.compactMap{numberKey in
+    return dict[numberKey]
+}.sink { value in
+    print(value)
+}
+
+/*
+ one
+ two
+ three
+ five
+ */
+
+
+
 
