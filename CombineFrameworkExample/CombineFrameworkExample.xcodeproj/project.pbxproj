@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C24309B52A6E950E00B3AA45 /* TextFieldSubscriberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24309B42A6E950E00B3AA45 /* TextFieldSubscriberViewController.swift */; };
+		C24309B72A6E9BF400B3AA45 /* FormValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24309B62A6E9BF400B3AA45 /* FormValidationViewController.swift */; };
+		C24309BB2A6EBB1400B3AA45 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24309BA2A6EBB1400B3AA45 /* TabBarController.swift */; };
 		C26B9C472A6A72CD0009E2FF /* AssignSubscriberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26B9C462A6A72CD0009E2FF /* AssignSubscriberViewController.swift */; };
 		C26B9C492A6A82C80009E2FF /* RefactorAssignSubscriberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C26B9C482A6A82C80009E2FF /* RefactorAssignSubscriberViewController.swift */; };
 		C2D33FFD2A1F758A00E17E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D33FFC2A1F758A00E17E0B /* AppDelegate.swift */; };
@@ -20,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C24309B42A6E950E00B3AA45 /* TextFieldSubscriberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldSubscriberViewController.swift; sourceTree = "<group>"; };
+		C24309B62A6E9BF400B3AA45 /* FormValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormValidationViewController.swift; sourceTree = "<group>"; };
+		C24309BA2A6EBB1400B3AA45 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		C26B9C462A6A72CD0009E2FF /* AssignSubscriberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignSubscriberViewController.swift; sourceTree = "<group>"; };
 		C26B9C482A6A82C80009E2FF /* RefactorAssignSubscriberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefactorAssignSubscriberViewController.swift; sourceTree = "<group>"; };
 		C2D33FF92A1F758A00E17E0B /* CombineFrameworkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombineFrameworkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +81,9 @@
 				C2D8659E2A2A177400349A14 /* Posts.swift */,
 				C26B9C462A6A72CD0009E2FF /* AssignSubscriberViewController.swift */,
 				C26B9C482A6A82C80009E2FF /* RefactorAssignSubscriberViewController.swift */,
+				C24309B42A6E950E00B3AA45 /* TextFieldSubscriberViewController.swift */,
+				C24309B62A6E9BF400B3AA45 /* FormValidationViewController.swift */,
+				C24309BA2A6EBB1400B3AA45 /* TabBarController.swift */,
 			);
 			path = CombineFrameworkExample;
 			sourceTree = "<group>";
@@ -153,9 +162,12 @@
 				C2D8659D2A2A143D00349A14 /* NetworkManager.swift in Sources */,
 				C2D340012A1F758A00E17E0B /* ViewController.swift in Sources */,
 				C2D8659F2A2A177400349A14 /* Posts.swift in Sources */,
+				C24309BB2A6EBB1400B3AA45 /* TabBarController.swift in Sources */,
+				C24309B72A6E9BF400B3AA45 /* FormValidationViewController.swift in Sources */,
 				C26B9C472A6A72CD0009E2FF /* AssignSubscriberViewController.swift in Sources */,
 				C2D33FFD2A1F758A00E17E0B /* AppDelegate.swift in Sources */,
 				C2D33FFF2A1F758A00E17E0B /* SceneDelegate.swift in Sources */,
+				C24309B52A6E950E00B3AA45 /* TextFieldSubscriberViewController.swift in Sources */,
 				C26B9C492A6A82C80009E2FF /* RefactorAssignSubscriberViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

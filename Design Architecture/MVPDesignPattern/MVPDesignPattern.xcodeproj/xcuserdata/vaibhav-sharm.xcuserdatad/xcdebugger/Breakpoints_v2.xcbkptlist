@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "7D2E4514-28FB-464D-95F8-9CAD0488F502"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6DF3BF9A-21EF-45AB-9CA1-C65140154005"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVPDesignPattern/Presenter.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "countTaps(tapTimes:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6DF3BF9A-21EF-45AB-9CA1-C65140154005 - e9742da30f8ec86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVPDesignPattern.Presenter.countTaps(tapTimes: Swift.Int) -&gt; ()"
+                  moduleName = "MVPDesignPattern"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/Design%20Architecture/MVPDesignPattern/MVPDesignPattern/Presenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "308">
+               </Location>
+               <Location
+                  uuid = "6DF3BF9A-21EF-45AB-9CA1-C65140154005 - e9742da30f8ec86"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "MVPDesignPattern.Presenter.countTaps(tapTimes: Swift.Int) -&gt; ()"
+                  moduleName = "MVPDesignPattern"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/Design%20Architecture/MVPDesignPattern/MVPDesignPattern/Presenter.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "354">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

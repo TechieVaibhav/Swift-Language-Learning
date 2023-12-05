@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Combine
 
 enum MYCustomError : String, Error{
     case invalidUrl = "The url is invalid"
@@ -38,4 +39,11 @@ class NetworkManager {
         task.resume()
     }
     
+    func getPostListByCombine(url : String) -> AnyPublisher<[Posts], Error>{
+        return URLSession.shared.dataTaskPublisher(for: URL(string: url)!)
+            .mapError{$0 as Error}
+            .map{ $0.data}
+            .decode(type: [Posts].self, decoder: JSONDecoder())
+            .eraseToAnyPublisher()
+    }
 }
