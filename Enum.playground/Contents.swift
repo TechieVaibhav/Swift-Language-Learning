@@ -90,8 +90,6 @@ evaluate(arthmaticExpression: productMultiplication) // 30 * 10 = 300
 // default -- will use to handle the rest cases (i mean remaining cases), so when we add new cases into the enum then it will not give us warnings.
 
 
-
-
 @frozen
 enum Option {
   case A

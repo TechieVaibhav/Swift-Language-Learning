@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enter Mobile NumberVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="EnterMobileNumberVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="EnterMobileNumberVC" customModule="Co_OrdinaterPatternInDetail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfn-ut-wAc">
+                                <rect key="frame" x="142.33333333333334" y="408.66666666666669" width="108.33333333333334" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Go To Next" titleAlignment="automatic">
+                                    <color key="baseForegroundColor" red="0.96841138599999999" green="0.24929682580000001" blue="0.21619929230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.56073205069999998" green="0.67843148139999998" blue="0.43904492169999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToNextVC:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="D3m-aj-sSr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.80573053509518489" green="0.96611279249191284" blue="0.84055905941382347" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nfn-ut-wAc" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="8oo-T2-Js8"/>
+                            <constraint firstItem="nfn-ut-wAc" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="bcm-p7-QJr"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="4"/>
+        </scene>
+        <!--Enter NameVC-->
+        <scene sceneID="ZlE-5J-r8K">
+            <objects>
+                <viewController storyboardIdentifier="EnterNameVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="x4a-s9-g7n" customClass="EnterNameVC" customModule="Co_OrdinaterPatternInDetail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eUG-BU-mEG">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-35-4ga">
+                                <rect key="frame" x="142.33333333333334" y="408.66666666666669" width="108.33333333333334" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Go To Next" titleAlignment="automatic">
+                                    <color key="baseForegroundColor" red="0.96841138599999999" green="0.24929682580000001" blue="0.21619929230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.56073205069999998" green="0.67843148139999998" blue="0.43904492169999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToNextVC:" destination="x4a-s9-g7n" eventType="touchUpInside" id="Pzh-Ei-9R4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NBA-MT-THh"/>
+                        <color key="backgroundColor" red="0.80573053510000003" green="0.96611279250000004" blue="0.84055905939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ccU-35-4ga" firstAttribute="centerY" secondItem="eUG-BU-mEG" secondAttribute="centerY" id="go5-fK-wPt"/>
+                            <constraint firstItem="ccU-35-4ga" firstAttribute="centerX" secondItem="eUG-BU-mEG" secondAttribute="centerX" id="oEO-CF-eNg"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pg3-3m-qug" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="4"/>
+        </scene>
+        <!--Enter Address View Controller-->
+        <scene sceneID="y8r-Zp-D4i">
+            <objects>
+                <viewController storyboardIdentifier="EnterAddressViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1lE-Tq-NJe" customClass="EnterAddressViewController" customModule="Co_OrdinaterPatternInDetail" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J8j-l2-d6T">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TZd-wP-Y45">
+                                <rect key="frame" x="142.33333333333334" y="408.66666666666669" width="108.33333333333334" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Go To Next" titleAlignment="automatic">
+                                    <color key="baseForegroundColor" red="0.96841138599999999" green="0.24929682580000001" blue="0.21619929230000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.56073205069999998" green="0.67843148139999998" blue="0.43904492169999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="goToNextVC:" destination="1lE-Tq-NJe" eventType="touchUpInside" id="U2t-Uk-lf0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Pv-Ue-dEL"/>
+                        <color key="backgroundColor" red="0.80573053510000003" green="0.96611279250000004" blue="0.84055905939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="TZd-wP-Y45" firstAttribute="centerX" secondItem="J8j-l2-d6T" secondAttribute="centerX" id="DLY-3Z-Zs7"/>
+                            <constraint firstItem="TZd-wP-Y45" firstAttribute="centerY" secondItem="J8j-l2-d6T" secondAttribute="centerY" id="Mob-gx-pG8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vgc-Uo-PP0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1592" y="-15"/>
+        </scene>
+    </scenes>
+</document>

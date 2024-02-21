@@ -15,6 +15,8 @@ print(y) // 2
 
 
 //One Side Operator- Range is define only one side either left or right.
+// one sided operator : the end range should be defiend. terminate condition is required. one sidede range opertor helps to find out sub array.
+// Note : one side operator hepls to find out sub-array.
 
 let array = ["1","2","3","4","5"]
 

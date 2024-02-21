@@ -19,5 +19,8 @@ class AppController: UIViewController {
         print(coordinator ?? "nil")
     }
 
+    @IBAction func tapOnMe(_ sender: UIButton) {
+        coordinator?.showDetailVC()
+    }
 }
 

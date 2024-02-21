@@ -1,22 +1,30 @@
 import UIKit
 
-var aString = "Hello, world"
+// ************** String and Characters **************
+//Note In String : Direct subscript not posible with strings
+var str: String = "Hello world" // a collection of characters and str is a collection type.
+var character : Character = "a" // a character is a single letter.
 
-var aChar: Character = "s"
+// startindex vs endindex - subscript to string
+// startindex - position of the first character.
+print( str[str.startIndex]) //H
+print( str[str.index(after: str.startIndex)]) //e
 
-//startIndex is a subscripts first valid argument
-print(aString[aString.index(after: aString.startIndex)])
+// endIndex - more than 1 of it's last character position.
 
-//endIndex is greater than one from subscripts last valid argument.
-print(aString[aString.index(before: aString.endIndex)])
+print(str[str.index(before: str.endIndex)]) //d
 
-var multilineString = """
- A multiline strinmg is here...
-       multiline with space
- A multiline strinmg is here... \n A multiline strinmg is here...
- A multiline strinmg is here...
- """
-print(multilineString)
+var multipline = """
+This is a paragrapgh
+how old are you\ni am just 18\nokay
+"""
+print(multipline)
+/*
+This is a paragrapgh
+how old are you
+i am just 18
+okay
+ */
 
 
 

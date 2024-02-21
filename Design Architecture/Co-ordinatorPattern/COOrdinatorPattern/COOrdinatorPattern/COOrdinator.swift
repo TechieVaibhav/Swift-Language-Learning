@@ -22,6 +22,12 @@ class COOrdinator{
         vc?.coordinator = self
         navigationController?.pushViewController(vc!, animated: true)
     }
-    
+
+    func showDetailVC() {
+        let storyborad = UIStoryboard(name: "AppLogin", bundle: nil)
+        let vc = storyborad.instantiateViewController(withIdentifier: "DetailViewController") as? DetailViewController
+        vc?.coordinator = self
+        navigationController?.pushViewController(vc!, animated: true)
+    }
 }
 

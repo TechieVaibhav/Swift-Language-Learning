@@ -1,4 +1,6 @@
 import UIKit
+
+// when more than one variant is exposed by struct/enum or value type.
 // 2 phase init
 //.. only Value Types supported ,. not by classes because they support the inheritance, inside value types a init can call another init for initalization process because another init function is also a part of same struct/enum.
 // for code reusability
@@ -24,6 +26,22 @@ indiaRocket.meeter
 let ukRocket = RocketLauncher(km: 20)
 ukRocket.meeter
 
+//***************************************
+
+struct BuyRocket {
+    var rocketPriceINR : Int
+
+    init(rocketPriceINR: Int) {
+        self.rocketPriceINR = rocketPriceINR
+    }
+    init(rocketPriceIn$ : Int) {
+        let convertINR = rocketPriceIn$ * 70
+        self.init(rocketPriceINR: convertINR)
+    }
+}
+
+let indianRocketBuyer = BuyRocket(rocketPriceINR: 99999999)
+let usaRocketBuyer = BuyRocket(rocketPriceIn$: 99999)
 
 
 internal enum MyEnum: Int {

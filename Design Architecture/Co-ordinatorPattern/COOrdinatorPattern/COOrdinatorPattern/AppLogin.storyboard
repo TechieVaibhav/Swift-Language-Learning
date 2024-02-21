@@ -15,8 +15,22 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZZh-VT-Gzk">
+                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="tapOnMe:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eLJ-gW-hK2"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZZh-VT-Gzk" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RaX-US-7Qc"/>
+                            <constraint firstItem="ZZh-VT-Gzk" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="f1y-et-Gaj"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -30,13 +44,28 @@
                     <view key="view" contentMode="scaleToFill" id="aej-E5-Ix0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diy-Ys-mBd">
+                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wRi-jA-9J0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="diy-Ys-mBd" firstAttribute="centerX" secondItem="aej-E5-Ix0" secondAttribute="centerX" id="8P0-uT-bZ3"/>
+                            <constraint firstItem="diy-Ys-mBd" firstAttribute="centerY" secondItem="aej-E5-Ix0" secondAttribute="centerY" id="UAj-bw-zN5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lbl" destination="diy-Ys-mBd" id="wMK-Da-srH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YF1-FV-DrH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="102"/>
+            <point key="canvasLocation" x="909" y="-58"/>
         </scene>
     </scenes>
     <resources>

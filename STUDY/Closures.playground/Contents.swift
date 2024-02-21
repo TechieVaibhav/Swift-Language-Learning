@@ -91,15 +91,15 @@ func someSimpleFunction(someClosure: @autoclosure ()->(), msg:String) {
 someSimpleFunction(someClosure: (), msg: "Auto")
 
 
-func whatever(foo: (@autoclosure (String) -> Int)) {
+func whatever(foo: (@autoclosure () -> Int)) {
     let x = foo("Hi This is my closure")
     print(x)
 }
 
-whatever( foo: {catureValue in
-    print(catureValue)
+whatever{
             return 5 }
-) */
+
+ */
 
 //Non Escaping Closure : byDefault all closures are nonescaping. if your closure gets called befor function return , so that is called nonescaping closure.
 
@@ -179,6 +179,27 @@ codeinPlayground { (msg) in
 
 */
 /******************************* Capture values **************/
+//Capture list - capture list is hepls to mantian the memory management.
+var variableCount = 0
+let increment = { variableCount += 1 } // Captures count implicitly (strong reference)
+
+func someFunctionExample() {
+  increment() // This might cause a retain cycle if count is used elsewhere
+}
+someFunctionExample()
+
+var updateCounter = 0
+var newincrement = { [updateCounter]
+    updateCounter += 1
+} // Copies count's value
+
+func someFunctionExample2() {
+    newincrement() // No retain cycle, count's copy is used
+}
+someFunctionExample2()
+
+
+
 var count = 0
 
 var incCounter = {
@@ -216,21 +237,58 @@ anotherConstCount = "10"
 anotherConstantIncCounter() // 10
 
 
-
+//Example 1
 var language = "objective-c"
 
-let code = { [language]
+let code = { [language] in // consider value instead of reference
     print("the language : \(language)")
 }
+language = "swift"
 
 code() // the language : objective-c
 
-language = "swift"
 
-code() // the language : swift
+//Example 2
+var newlanguage = "objective-c"
+let newcode = { [newlanguage] // without `in` consider orignal reference
+    print("the language : \(newlanguage)")
+}
+newlanguage = "swift"
 
-let newCode = code
-language = "swift12"
+newcode() // the language : swift
 
-newCode() //the language : objective-c
 
+//I'll explain the behavior of in and capture lists in these examples:
+
+//Example 1:
+
+/*
+
+Without in:
+
+The closure captures language by reference, meaning it directly accesses the original variable.
+When language is changed to "swift" before calling the closure, the closure sees the updated value and prints "the language: swift".
+With in:
+
+The capture list [language] creates a copy of the language variable's value ("objective-c") at the time of the closure's creation.
+The closure uses this copied value, which remains unchanged even when the original language is modified.
+Hence, the output is "the language: objective-c".
+
+Example 2:
+
+Missing in:
+This is a syntax error. The in keyword is mandatory to separate the closure's capture list and its body.
+The compiler would not allow this code to run.
+Key takeaways:
+
+Capture lists control how closures access variables from their surrounding scope.
+Value capture ([variable] in) creates a copy of the variable's value, making the closure independent of changes to the original variable.
+Reference capture (in without a capture list) captures a reference to the original variable, so the closure sees changes made to it.
+The in keyword is essential for defining a closure's body and separating it from the capture list.
+Remember:
+
+Use value capture when you want the closure to work with a fixed value, even if the original variable changes.
+Use reference capture when you want the closure to reflect changes to the original variable.
+Always include the in keyword to correctly define a closure's structure.
+
+*/

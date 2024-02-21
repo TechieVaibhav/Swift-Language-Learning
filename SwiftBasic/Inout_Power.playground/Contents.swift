@@ -36,7 +36,7 @@ print(obj1.value) //10
 let obj2 = obj1
 print(obj2.value) //10
 
-// all are same due to both are having same reference.
+// all are same due to both are having same reference\same address.
 
 
 class Match{
@@ -60,6 +60,7 @@ seeFinalScore(match: match)
 
 // Struct : A `struct` is a value type, so when we pass struct object then multiple copys are created.
 
+// Note : always create struct object with var keyword if you want modify the properties of struct by structObj.
 
 struct NewMatch{
     var score : Int = 0
@@ -78,6 +79,8 @@ var newMatch = NewMatch(score: 0)
 newMatch.start()
 seeFinalScore(match: &newMatch)//passign the memory address
 print("Match score for value type outside: \(match.score)")
+
+//Note : Actor, classes, and closures are reference type, rest all are value type in swift.
 
 /***************************************************************/
 

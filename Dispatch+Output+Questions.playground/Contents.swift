@@ -46,7 +46,7 @@ func guessTheOutput2WithDispatch() {
 Error: compiler throws Execution was interrupted, reason: EXC_BAD_INSTRUCTION
 So here we are access the Main-Thread and force to run synchronously, it will results as deadlock.
  
-Note:  only "step 1" is print, sync means we want to perform opertions/task in synchronous way.
+Note:  only "step 1" is print, deadlock created,sync means we want to perform opertions/task in synchronous way.
  
  */
 
@@ -158,7 +158,7 @@ func guessTheOutput7WithDispatch() {
 
 //guessTheOutput7WithDispatch()
 
-// output :- 1 ,6,7, 2
+// output :- 1 ,6,7, 2, then deadlock started.
 
 func guessTheOutput8WithDispatch() {
     print("step 1")
@@ -174,10 +174,8 @@ func guessTheOutput8WithDispatch() {
     print("step 4")
     print("step 5")
 }
-guessTheOutput8WithDispatch()
-// output :- 1 ,4 , 5
-
-
+//guessTheOutput8WithDispatch()
+// output :- 1 ,4 , 5, after then deadlock is created
 
 func guessTheOutput9WithDispatch() {
     print("step 1")
@@ -284,7 +282,7 @@ func guessTheOutput11WithDispatch() {
     print("step 8")
 }
 
-guessTheOutput11WithDispatch()
+//guessTheOutput11WithDispatch()
 
 /* cut for make logic
  DispatchQueue.main.async {
@@ -363,3 +361,5 @@ func guessTheOutput12WithDispatch() {
     print("step 8")
 }
 guessTheOutput12WithDispatch()
+
+//1,7,8,0-10,3,5,6,2,4

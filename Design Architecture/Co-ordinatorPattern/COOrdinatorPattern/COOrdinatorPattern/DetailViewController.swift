@@ -8,22 +8,16 @@
 import UIKit
 
 class DetailViewController: UIViewController {
+    
+    @IBOutlet weak var lbl: UILabel!
+   
+    weak var coordinator : COOrdinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lbl.text = "Welcome detail screen"
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
