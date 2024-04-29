@@ -44,12 +44,12 @@ func findOutMisingNumberBySecondApproach(array : [Int]){
     //add 1 to match the natural number length(to calculate the sum of n natural number)
     let length = array.count + 1
     
-   let sum1 = length * (length + 1)/2
-    var sum2 = 0
+   let expectedSum = length * (length + 1)/2
+    var actualSum = 0
     for i in 0..<array.count {
-        sum2 = sum2 + array[i]
+        actualSum = actualSum + array[i]
     }
-    print("now difference will tell you the missing number : \(sum1 - sum2)")
+    print("now difference will tell you the missing number : \(expectedSum - actualSum)")
 }
 
 //findOutMisingNumberBySecondApproach(array: [4,5,2,1])
