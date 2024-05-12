@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6FCE4DEE-F826-47B7-9B95-2AA4EA6CB124"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "772C120E-892F-4779-BA79-7DE0FCE3AC2C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "APICALLING/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "772C120E-892F-4779-BA79-7DE0FCE3AC2C - 3541949e05bf3b07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for APICALLING.ContentView.loadData() async -&gt; ()"
+                  moduleName = "APICALLING"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/SWIFT%20UI/APICALLING/APICALLING/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "232">
+               </Location>
+               <Location
+                  uuid = "772C120E-892F-4779-BA79-7DE0FCE3AC2C - c12a1eb8f088e519"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for APICALLING.ContentView.loadData() async -&gt; ()"
+                  moduleName = "APICALLING"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/SWIFT%20UI/APICALLING/APICALLING/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "188">
+               </Location>
+               <Location
+                  uuid = "772C120E-892F-4779-BA79-7DE0FCE3AC2C - 51bffd38e0e39e34"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(2) await resume partial function for APICALLING.ContentView.loadData() async -&gt; ()"
+                  moduleName = "APICALLING"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/SWIFT%20UI/APICALLING/APICALLING/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  uuid = "772C120E-892F-4779-BA79-7DE0FCE3AC2C - 3541949e05bf3b07"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for APICALLING.ContentView.loadData() async -&gt; ()"
+                  moduleName = "APICALLING"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/SWIFT%20UI/APICALLING/APICALLING/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "110">
+               </Location>
+               <Location
+                  uuid = "772C120E-892F-4779-BA79-7DE0FCE3AC2C - ee952f8cf3caee04"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(4) suspend resume partial function for APICALLING.ContentView.loadData() async -&gt; ()"
+                  moduleName = "APICALLING"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/SWIFT%20UI/APICALLING/APICALLING/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "42">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "667FEB37-1237-4DAE-9470-FD50DD50F4AE"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "APICALLING/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "667FEB37-1237-4DAE-9470-FD50DD50F4AE - 3541949e05bf3b26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for APICALLING.ContentView.loadData() async -&gt; ()"
+                  moduleName = "APICALLING"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/SWIFT%20UI/APICALLING/APICALLING/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "424">
+               </Location>
+               <Location
+                  uuid = "667FEB37-1237-4DAE-9470-FD50DD50F4AE - 3541949e05bf3b26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for APICALLING.ContentView.loadData() async -&gt; ()"
+                  moduleName = "APICALLING"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/SWIFT%20UI/APICALLING/APICALLING/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "232">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5419A621-B0BA-4EBE-B5F2-AE7DE76D970E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "APICALLING/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "loadData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5419A621-B0BA-4EBE-B5F2-AE7DE76D970E - 3541949e05bf38c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for APICALLING.ContentView.loadData() async -&gt; ()"
+                  moduleName = "APICALLING"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/SWIFT%20UI/APICALLING/APICALLING/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  uuid = "5419A621-B0BA-4EBE-B5F2-AE7DE76D970E - 3541949e05bf38c5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for APICALLING.ContentView.loadData() async -&gt; ()"
+                  moduleName = "APICALLING"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/vaibhav-sharm/Desktop/DESTOP/Study+Latest/SWIFT%20UI/APICALLING/APICALLING/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "424">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
