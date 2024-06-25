@@ -47,15 +47,16 @@ class Match{
     }
 }
 
-func seeFinalScore(match: Match){
-    print("final score : \(match.score)") //final score : 100
-}
+
 
 let match = Match()
 match.start()
 match.score = 100
 seeFinalScore(match: match)
 
+func seeFinalScore(match: Match){
+    print("final score : \(match.score)") //final score : 100
+}
 
 
 // Struct : A `struct` is a value type, so when we pass struct object then multiple copys are created.

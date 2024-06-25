@@ -1338,46 +1338,134 @@ import UIKit
 // extension are more like to extend the functionality for existing type.
 // stored property are not allowed in  extensions(and `init` not allwoed if extentend the existing type like 'Int', `string`).
 // convience init is allowed in extensions.
+/*
+
+ extension Int {
+ //  custom computed property
+ var score: Int {
+ get {
+ return self * 10
+ }
+ }
+
+ func myCustomFunction() -> Int{
+ return self * 120
+ }
+
+ }
+
+ print(11.score) // 110 //
+ print(11.myCustomFunction()) // 1320 //
+
+ class ExtensionTestingWithConvienceInit{
+ var name : String
+ var age : Int
+
+ init(name: String, age: Int) {
+ self.name = name
+ self.age = age
+ }
+ }
+ extension ExtensionTestingWithConvienceInit{
+ convenience init?(age : Int) {
+ if age < 18{
+ return nil
+ }
+ self.init(name: "Vaibhav", age: age)
+ }
+ }
+
+ // in struct - convenience init are not allowed.
+
+ // Property wrapper
+ @propertyWrapper
+ struct EmailValidator {
+ private var _value : String?
+
+ var wrappedValue : String{
+ get {
+ isValidEmail() ? _value! : ""
+ }
+ set{
+ _value = newValue
+ }
+ }
+
+ init(wrappedValue: String) {
+ self.wrappedValue = wrappedValue
+ }
+
+ func isValidEmail() -> Bool {
+ if let value =  _value, value.count > 5{
+ return true
+ }
+ return false
+ }
+ }
+
+ class User{
+ @EmailValidator var email : String
+ var pass: String
+ init(email: String, pass: String) {
+ self.email = email
+ self.pass = pass
+ }
+ }
+ let user = User(email:"123456", pass: "")
+ print(user.email)
+
+ */
+/*
+ func alphabetCount(inputstring : String) -> Int{
+
+ var lowerCaseCount = 0
+ var upperCaseCount = 0
+
+ for char in inputstring{
+ if char.isUppercase{
+ upperCaseCount += 1
+ } else if char.isLowercase{
+ lowerCaseCount += 1
+ }
+ }
+ if upperCaseCount == lowerCaseCount{
+ return 0
+ } else if upperCaseCount > lowerCaseCount {
+ return 1
+ } else {
+ return 2
+ }
+ }
+
+ alphabetCount(inputstring: "AAAAAAbbb")
+ */
+
+//// Selection sort
+//func sortArray(arr : inout [Int]) {
+//    var length = arr.count
+//    for i in 0..<length-1{
+//        for j in (i+1)..<length{
+//            if arr[i] > arr[j]{
+//                var temp = arr[i]
+//                arr[i] = arr[j]
+//                arr[j] = temp
+//            }
+//        }
+//    }
+//    print("final array : \(arr)")
+//}
+//var arr = [1,89,0,12,3,5,1,2,1,2,2,2,33,3,3,3,4,4,4]
+//sortArray(arr: &arr)
 
 
-extension Int {
-    //  custom computed property
-    var score: Int {
-        get {
-            return self * 10
-        }
-    }
+//== vs ===
 
-    func myCustomFunction() -> Int{
-        return self * 120
-    }
-
+struct A : Equatable{
+    var x = 10
 }
+var a = A()
+var b = A()
 
-print(11.score) // 110 //
-print(11.myCustomFunction()) // 1320 //
-
-class ExtensionTestingWithConvienceInit{
-    var name : String
-    var age : Int
-    
-    init(name: String, age: Int) {
-        self.name = name
-        self.age = age
-    }
+if a == b {
+    print("same")
 }
-extension ExtensionTestingWithConvienceInit{
-    convenience init?(age : Int) {
-        if age < 18{
-            return nil
-        }
-        self.init(name: "Vaibhav", age: age)
-    }
-}
-
-// in struct - convenience init are not allowed.
-
-
-
-
-
