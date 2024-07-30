@@ -108,7 +108,41 @@ func optionSelected(option: Option) {
   }
 }
 
+enum OnlineShoping :Error {
+    case invalidUrl
+    case itemNotFound
+    
+    func description() -> String{
+        switch self {
+        case .invalidUrl:
+            return "hey invalid address"
+        default:
+            return "Hey right now item not available in inventry"
+        }
+    }
+}
 
+func doSomething(validate : Int) throws {
+    switch validate{
+    case 0:
+        throw OnlineShoping.invalidUrl
+    case 1:
+        throw OnlineShoping.itemNotFound
+    default :
+        break
+    }
+    
+}
+
+do {
+    try doSomething(validate: 1)
+} catch let error {
+    if let onlineShopingError = error as? OnlineShoping {
+        print(onlineShopingError.description())
+    } else {
+        print("Unexpected error: \(error)")
+    }
+}
 
 
 
